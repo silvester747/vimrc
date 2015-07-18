@@ -1,5 +1,9 @@
 My vimrc
 ========
-Install::
-  git clone git@github.com:silvester747/vimrc.git .vim
+To install:
+
+> cd
+> git clone https://github.com/silvester747/vimrc.git .vim
+> cd .vim
+> ./install.sh
 
