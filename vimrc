@@ -4,6 +4,9 @@ set nocompatible
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc nested source %
 
+" Enable pathogen
+execute pathogen#infect()
+
 " Set leader to ,
 let mapleader=","
 
@@ -52,9 +55,6 @@ autocmd FileType java setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 " C options
 set cinoptions+=g0
-
-" Enable pathogen
-execute pathogen#infect()
 
 " Enable powerline
 set laststatus=2
