@@ -1,4 +1,5 @@
 #!/bin/bash
+git pull
 
 sudo -H pip install --upgrade pip
 sudo -H pip install --upgrade powerline-status
