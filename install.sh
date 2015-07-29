@@ -13,7 +13,7 @@ function clone_or_pull {
     cd "$1"
     git pull
   else
-    git clone $2
+    git clone $2 $1
   fi
 }
 
