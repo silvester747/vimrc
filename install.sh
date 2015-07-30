@@ -21,4 +21,5 @@ clone_or_pull ~/.vim/bundle/vim-wombat256mod https://github.com/michalbachowski/
 clone_or_pull ~/.vim/bundle/ctrlp.vim https://github.com/kien/ctrlp.vim.git
 clone_or_pull ~/.vim/bundle/jedi-vim "--recursive https://github.com/davidhalter/jedi-vim.git"
 clone_or_pull ~/.vim/bundle/nerdtree https://github.com/scrooloose/nerdtree.git
+clone_or_pull ~/.vim/bundle/supertab https://github.com/ervandew/supertab.git
 
