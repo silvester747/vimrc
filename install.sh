@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install vim python-pip
+sudo apt-get install vim python-pip ack
 sudo -H pip install --upgrade pip
 sudo -H pip install --upgrade powerline-status
 sudo -H pip install --upgrade jedi
@@ -22,4 +22,5 @@ clone_or_pull ~/.vim/bundle/ctrlp.vim https://github.com/kien/ctrlp.vim.git
 clone_or_pull ~/.vim/bundle/jedi-vim "--recursive https://github.com/davidhalter/jedi-vim.git"
 clone_or_pull ~/.vim/bundle/nerdtree https://github.com/scrooloose/nerdtree.git
 clone_or_pull ~/.vim/bundle/supertab https://github.com/ervandew/supertab.git
+clone_or_pull ~/.vim/bundle/ack.vim https://github.com/mileszs/ack.vim.git
 
