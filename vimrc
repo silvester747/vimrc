@@ -143,3 +143,6 @@ nnoremap <leader>a :Ack<space>
 
 " Python folding
 set nofoldenable
+
+" GUI font
+set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
