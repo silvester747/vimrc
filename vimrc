@@ -106,7 +106,7 @@ endfunction
 
 " Enable NERDtree
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.bak']
 
 " P4 shortcuts
 nmap <silent> <leader>pe :!p4 edit %<CR>
