@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt-get install vim python-pip ack
+sudo apt-get install vim python-pip ack-grep
 sudo -H pip install --upgrade pip
 sudo -H pip install --upgrade powerline-status
 sudo -H pip install --upgrade jedi

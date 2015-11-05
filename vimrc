@@ -107,7 +107,7 @@ endfunction
 
 " Enable NERDtree
 map <C-n> :NERDTreeToggle<CR>
-let NERDTreeIgnore = ['\.pyc$']
+let NERDTreeIgnore = ['\.pyc$', '\.bak']
 
 " P4 shortcuts
 nmap <silent> <leader>pe :!p4 edit %<CR>
@@ -145,5 +145,11 @@ nnoremap <leader>a :Ack<space>
 " Python folding
 set nofoldenable
 
-" MacVim specific
-set guifont=Sauce\ Code\ Powerline:h11
+" GUI font
+if has("gui_running")
+  if has("gui_gtk2")
+    set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
+  elseif has("gui_macvim")
+    set guifont=Sauce\ Code\ Powerline:h11
+  endif
+endif
