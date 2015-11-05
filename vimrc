@@ -105,6 +105,11 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
+" Shortcuts to use system clipboard
+map <leader>x "+d
+map <leader>c "+y
+map <leader>v "+p
+
 " Enable NERDtree
 map <C-n> :NERDTreeToggle<CR>
 let NERDTreeIgnore = ['\.pyc$', '\.bak']
