@@ -153,3 +153,21 @@ if has("gui_running")
     set guifont=Sauce\ Code\ Powerline:h11
   endif
 endif
+
+" Make view not modifiable if file is read-only
+function UpdateModifiable()
+  if !exists("b:setmodifiable")
+    let b:setmodifiable = 0
+  endif
+  if &readonly
+    if &modifiable
+      setlocal nomodifiable
+      let b:setmodifiable = 1
+    endif
+  else
+    if b:setmodifiable
+      setlocal modifiable
+    endif
+  endif
+endfunction
+autocmd BufReadPost * call UpdateModifiable()
