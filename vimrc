@@ -58,6 +58,7 @@ set cinoptions+=g0
 
 " Enable powerline
 set laststatus=2
+set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
 set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
 set noshowmode
 
@@ -143,3 +144,6 @@ nnoremap <leader>a :Ack<space>
 
 " Python folding
 set nofoldenable
+
+" MacVim specific
+set guifont=Sauce\ Code\ Powerline:h11
