@@ -66,11 +66,6 @@ set noshowmode
 let g:ctrlp_max_height=30
 set wildignore+=*.pyc
 
-" Settings for jedi
-let g:jedi#use_splits_not_buffers="left"
-let g:jedi#popup_on_dot=0
-let g:jedi#popup_select_first=0
-
 " Easy window navigation
 map <c-j> <c-w>j
 map <c-k> <c-w>k
@@ -176,3 +171,21 @@ function UpdateModifiable()
   endif
 endfunction
 autocmd BufReadPost * call UpdateModifiable()
+
+" YouCompleteMe options
+" disables question when loading cfg files
+let g:ycm_confirm_extra_conf = 0
+" min chars for completion
+let g:ycm_min_num_of_chars_for_completion = 2
+" auto compiler identifier
+let g:ycm_auto_trigger = 1
+" use all completion engines
+let g:ycm_cache_omnifunc = 1
+" logging level
+let g:ycm_server_log_level = 'info'
+" loads programming lagnuage keywords
+let g:ycm_seed_identifiers_with_syntax = 1
+" show preview
+let g:ycm_add_preview_to_completeopt = 0
+" force diagnostic
+nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
