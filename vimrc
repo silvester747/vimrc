@@ -1,11 +1,24 @@
 " We are using vim, not vi
 set nocompatible
 
+" Vundle
+filetype off
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+
+Plugin 'VundleVim/Vundle.vim'
+
+Plugin 'michalbachowski/vim-wombat256mod'
+Plugin 'kien/ctrlp.vim'
+Plugin 'scrooloose/nerdtree'
+Plugin 'ervandew/supertab'
+Plugin 'mileszs/ack.vim'
+Plugin 'Valloric/YouCompleteMe'
+
+call vundle#end()
+
 " Automatic reloading of .vimrc
 autocmd! bufwritepost .vimrc nested source %
-
-" Enable pathogen
-execute pathogen#infect()
 
 " Set leader to ,
 let mapleader=","
