@@ -131,9 +131,6 @@ nmap <silent> <leader>pr :!p4 revert %<CR>
 nmap <silent> <leader>ha :!hg add %<CR>
 nmap <silent> <leader>hr :!hg revert %<CR>
 
-" Hide buffers instead of closing. This preserves unwritten changes and undo history
-set hidden
-
 " When opening files for edit, automatically reload them
 set autoread
 
