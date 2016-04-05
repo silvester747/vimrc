@@ -3,8 +3,8 @@ set nocompatible
 
 " Vundle
 filetype off
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
+set rtp+=~/vimfiles/bundle/Vundle.vim
+call vundle#begin('$USERPROFILE/vimfiles/bundle/')
 
 Plugin 'VundleVim/Vundle.vim'
 
@@ -149,6 +149,9 @@ set ttyfast
 " Keep an undofile for every file edited, so I can undo even after closing
 set undofile
 
+" Let backspace work as expected
+set backspace=indent,eol,start
+
 " Short key for ack-grep
 nnoremap <leader>a :Ack<space>
 
@@ -161,6 +164,8 @@ if has("gui_running")
     set guifont=Source\ Code\ Pro\ for\ Powerline\ 9
   elseif has("gui_macvim")
     set guifont=Sauce\ Code\ Powerline:h11
+  elseif has("gui_win32")
+    set guifont=Sauce_Code_Powerline:h9:cANSI
   endif
 endif
 
