@@ -72,7 +72,10 @@ autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType java setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 " C options
+" Scope declarations at 0 indent
 set cinoptions+=g0
+" When putting function arguments on next line, indent with 2 only
+set cinoptions+=(0W2
 
 " Enable powerline
 set laststatus=2
@@ -209,3 +212,6 @@ let g:ycm_seed_identifiers_with_syntax = 1
 let g:ycm_add_preview_to_completeopt = 0
 " force diagnostic
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
+
+" Nice relative line numbers
+set relativenumber
