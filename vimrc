@@ -76,6 +76,8 @@ autocmd FileType java setlocal tabstop=4 softtabstop=4 shiftwidth=4
 set cinoptions+=g0
 " When putting function arguments on next line, indent with 2 only
 set cinoptions+=(0W2
+" Support doxygen comments
+autocmd FileType cpp setlocal comments-=:// comments+=://!,://
 
 " Enable powerline
 set laststatus=2
