@@ -8,6 +8,7 @@ if has("win32") || has("win16")
   call vundle#begin('$USERPROFILE/vimfiles/bundle/')
 else
   set rtp+=~/.vim/bundle/Vundle.vim
+  set shell=/bin/bash
   call vundle#begin()
 endif
 
