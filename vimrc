@@ -215,5 +215,13 @@ let g:ycm_add_preview_to_completeopt = 0
 " force diagnostic
 nnoremap <F5> :YcmForceCompileAndDiagnostics<CR>
 
+" YCM short keys
+nnoremap <leader>yg :YcmCompleter GoTo<CR>
+nnoremap <leader>yi :YcmCompleter GoToInclude<CR>
+nnoremap <leader>yd :YcmCompleter GoToDeclaration<CR>
+nnoremap <leader>yf :YcmCompleter GoToDefinition<CR>
+nnoremap <leader>yt :YcmCompleter GetType<CR>
+nnoremap <leader>yp :YcmCompleter GetParent<CR>
+
 " Nice relative line numbers
 set relativenumber
