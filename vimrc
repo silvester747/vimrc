@@ -82,8 +82,9 @@ autocmd FileType cpp setlocal comments-=:// comments+=://!,://
 
 " Enable powerline
 set laststatus=2
-set rtp+=/usr/local/lib/python2.7/site-packages/powerline/bindings/vim
-set rtp+=/usr/local/lib/python2.7/dist-packages/powerline/bindings/vim
+silent! python3 from powerline.vim import setup as powerline_setup
+python3 powerline_setup()
+python3 del powerline_setup
 set noshowmode
 
 " Settings for ctrlp
