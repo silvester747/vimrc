@@ -20,6 +20,7 @@ Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
 Plugin 'mileszs/ack.vim'
 Plugin 'Valloric/YouCompleteMe'
+Plugin 'thiagoalessio/rainbow_levels.vim'
 
 call vundle#end()
 
@@ -231,3 +232,7 @@ nnoremap <leader>yp :YcmCompleter GetParent<CR>
 
 " Nice relative line numbers
 set relativenumber
+
+" Rainbow levels short keys
+nnoremap <leader>l :RainbowLevelsToggle<CR>
+
