@@ -232,12 +232,21 @@ nnoremap <leader>yf :YcmCompleter GoToDefinition<CR>
 nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yp :YcmCompleter GetParent<CR>
 
-" Nice relative line numbers
-set relativenumber
-
 " Rainbow levels short keys
 nnoremap <leader>l :RainbowLevelsToggle<CR>
 
 " Use NERDtree for :e. and the likes
 let NERDTreeHijackNetrw=1
 
+" EasyMotion settings
+let g:EasyMotion_do_mapping = 0 " Disable default mappings
+" Jump to anywhere you want with minimal keystrokes, with just one key binding.
+" `s{char}{label}`
+nmap s <Plug>(easymotion-overwin-f)
+
+" Turn on case insensitive feature
+let g:EasyMotion_smartcase = 1
+
+" JK motions: Line motions
+map <Leader>j <Plug>(easymotion-j)
+map <Leader>k <Plug>(easymotion-k)
