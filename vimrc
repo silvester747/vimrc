@@ -22,6 +22,7 @@ Plugin 'mileszs/ack.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'thiagoalessio/rainbow_levels.vim'
 Plugin 'sheerun/vim-polyglot'
+Plugin 'easymotion/vim-easymotion'
 
 call vundle#end()
 
