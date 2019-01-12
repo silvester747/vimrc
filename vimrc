@@ -236,3 +236,6 @@ set relativenumber
 " Rainbow levels short keys
 nnoremap <leader>l :RainbowLevelsToggle<CR>
 
+" Use NERDtree for :e. and the likes
+let NERDTreeHijackNetrw=1
+
