@@ -67,16 +67,20 @@ set undolevels=700
 set tabstop=2
 set softtabstop=2
 set shiftwidth=2
-set shiftround
+set noshiftround
 set expandtab
 autocmd FileType python setlocal tabstop=4 softtabstop=4 shiftwidth=4
 autocmd FileType java setlocal tabstop=4 softtabstop=4 shiftwidth=4
 
 " C options
-" Scope declarations at 0 indent
-set cinoptions+=g0
-" When putting function arguments on next line, indent with 2 only
-set cinoptions+=(0W2
+" Scope declarations at 1 indent
+set cinoptions+=g1
+" When putting function arguments on next line, indent with 4
+set cinoptions+=(0W4
+" Do not indent namespace blocks
+set cinoptions+=N-s
+" Ident base class declarations and constructor initializers at 4
+set cinoptions+=i4
 " Support doxygen comments
 autocmd FileType cpp setlocal comments-=:// comments+=://!,://
 
