@@ -23,6 +23,7 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'thiagoalessio/rainbow_levels.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'easymotion/vim-easymotion'
+Plugin 'trevordmiller/nova-vim'
 
 call vundle#end()
 
@@ -46,8 +47,7 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
-set t_Co=256  " limit to 256 colors
-color wombat256mod
+colorscheme nova
 
 " Enable syntax highlighting
 filetype off
