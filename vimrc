@@ -24,6 +24,8 @@ Plugin 'thiagoalessio/rainbow_levels.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'easymotion/vim-easymotion'
 Plugin 'trevordmiller/nova-vim'
+Plugin 'junegunn/goyo.vim'
+Plugin 'junegunn/limelight.vim'
 
 call vundle#end()
 
@@ -233,7 +235,7 @@ nnoremap <leader>yt :YcmCompleter GetType<CR>
 nnoremap <leader>yp :YcmCompleter GetParent<CR>
 
 " Rainbow levels short keys
-nnoremap <leader>l :RainbowLevelsToggle<CR>
+nnoremap <leader>r :RainbowLevelsToggle<CR>
 
 " Use NERDtree for :e. and the likes
 let NERDTreeHijackNetrw=1
@@ -250,3 +252,10 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
+
+" Goyo and Limelight
+map <Leader>l :Limelight<CR>
+map <Leader>g :Goyo<CR>
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
+let g:goyo_width = 100
