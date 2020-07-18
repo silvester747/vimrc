@@ -14,7 +14,6 @@ endif
 
 Plugin 'VundleVim/Vundle.vim'
 
-Plugin 'michalbachowski/vim-wombat256mod'
 Plugin 'kien/ctrlp.vim'
 Plugin 'scrooloose/nerdtree'
 Plugin 'ervandew/supertab'
