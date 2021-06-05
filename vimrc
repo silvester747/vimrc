@@ -26,6 +26,7 @@ Plugin 'trevordmiller/nova-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'arcticicestudio/nord-vim'
+Plugin 'vim-airline/vim-airline'
 
 call vundle#end()
 
@@ -92,16 +93,12 @@ set cinoptions+=i4
 " Support doxygen comments
 autocmd FileType cpp setlocal comments-=:// comments+=://!,://
 
-" Enable powerline
-set laststatus=2
-silent! python3 from powerline.vim import setup as powerline_setup
-python3 powerline_setup()
-python3 del powerline_setup
-set noshowmode
-
 " Settings for ctrlp
 let g:ctrlp_max_height=30
 set wildignore+=*.pyc
+
+" Airline settings
+let g:airline_powerline_fonts = 1
 
 " Easy window navigation
 map <c-j> <c-w>j
