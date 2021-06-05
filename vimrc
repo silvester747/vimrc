@@ -15,7 +15,6 @@ endif
 Plugin 'VundleVim/Vundle.vim'
 
 Plugin 'scrooloose/nerdtree'
-Plugin 'ervandew/supertab'
 Plugin 'mileszs/ack.vim'
 Plugin 'Valloric/YouCompleteMe'
 Plugin 'thiagoalessio/rainbow_levels.vim'
