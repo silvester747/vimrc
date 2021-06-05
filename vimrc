@@ -25,6 +25,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'trevordmiller/nova-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
+Plugin 'arcticicestudio/nord-vim'
 
 call vundle#end()
 
@@ -51,7 +52,7 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
-colorscheme nova
+colorscheme nord
 
 " Enable syntax highlighting
 filetype off
