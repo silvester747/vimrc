@@ -251,3 +251,6 @@ map <Leader>g :Goyo<CR>
 autocmd! User GoyoEnter Limelight
 autocmd! User GoyoLeave Limelight!
 let g:goyo_width = 100
+
+" Fix formatting for AsciiDoc
+autocmd FileType asciidoc set fo=want
