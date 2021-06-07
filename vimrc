@@ -248,8 +248,6 @@ map <Leader>k <Plug>(easymotion-k)
 " Goyo and Limelight
 map <Leader>l :Limelight<CR>
 map <Leader>g :Goyo<CR>
-autocmd! User GoyoEnter Limelight
-autocmd! User GoyoLeave Limelight!
 let g:goyo_width = 100
 
 " Fix formatting for AsciiDoc
