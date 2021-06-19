@@ -20,11 +20,18 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'thiagoalessio/rainbow_levels.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'trevordmiller/nova-vim'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
-Plugin 'arcticicestudio/nord-vim'
 Plugin 'vim-airline/vim-airline'
+
+Plugin 'trevordmiller/nova-vim'
+Plugin 'arcticicestudio/nord-vim'
+Plugin 'morhetz/gruvbox'
+Plugin 'tomasr/molokai'
+Plugin 'sonph/onehalf', { 'rtp': 'vim' }
+Plugin 'rakr/vim-one'
+Plugin 'kyoz/purify', { 'rtp': 'vim' }
+Plugin 'drewtempelmeyer/palenight.vim'
 
 call vundle#end()
 
@@ -52,6 +59,14 @@ au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
 colorscheme nord
+nmap <silent> <leader>1 :colorscheme nova<CR>
+nmap <silent> <leader>2 :colorscheme nord<CR>
+nmap <silent> <leader>3 :colorscheme gruvbox<CR>
+nmap <silent> <leader>4 :colorscheme molokai<CR>
+nmap <silent> <leader>5 :colorscheme onehalfdark<CR>
+nmap <silent> <leader>6 :colorscheme one<CR>
+nmap <silent> <leader>7 :colorscheme purify<CR>
+nmap <silent> <leader>8 :colorscheme palenight<CR>
 
 " Enable syntax highlighting
 filetype off
