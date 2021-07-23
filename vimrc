@@ -32,6 +32,7 @@ Plugin 'sonph/onehalf', { 'rtp': 'vim' }
 Plugin 'rakr/vim-one'
 Plugin 'kyoz/purify', { 'rtp': 'vim' }
 Plugin 'drewtempelmeyer/palenight.vim'
+Plugin 'embark-theme/vim', { 'as': 'embark' }
 
 call vundle#end()
 
@@ -70,6 +71,7 @@ nmap <silent> <leader>5 :colorscheme onehalfdark<CR>
 nmap <silent> <leader>6 :colorscheme one<CR>
 nmap <silent> <leader>7 :colorscheme purify<CR>
 nmap <silent> <leader>8 :colorscheme palenight<CR>
+nmap <silent> <leader>9 :colorscheme embark<CR>
 
 " Enable syntax highlighting
 filetype off
