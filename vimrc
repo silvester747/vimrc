@@ -58,7 +58,10 @@ autocmd ColorScheme * highlight ExtraWhitespace ctermbg=red guibg=red
 au InsertLeave * match ExtraWhitespace /\s\+$/
 
 " Color scheme
-colorscheme nord
+set termguicolors
+" Bug in gruvbox scheme on startup. Need to load another scheme first
+colorscheme nova
+colorscheme gruvbox
 nmap <silent> <leader>1 :colorscheme nova<CR>
 nmap <silent> <leader>2 :colorscheme nord<CR>
 nmap <silent> <leader>3 :colorscheme gruvbox<CR>
