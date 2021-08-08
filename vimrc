@@ -1,6 +1,11 @@
 " We are using vim, not vi
 set nocompatible
 
+" Make Neovim find python
+if has('nvim')
+  let g:python3_host_prog = '/usr/bin/python3'
+endif
+
 " Vundle
 filetype off
 if has("win32") || has("win16")
@@ -173,6 +178,9 @@ nmap <silent> <leader>hr :!hg revert %<CR>
 
 " When opening files for edit, automatically reload them
 set autoread
+augroup OnFileChanged
+  au FocusGained * :checktime
+augroup end
 
 " Keep some lines around the cursor when scrolling
 set scrolloff=3
