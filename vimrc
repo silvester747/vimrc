@@ -83,6 +83,9 @@ nmap <silent> <leader>9 :colorscheme embark<CR>
 filetype off
 filetype plugin indent on
 syntax on
+augroup SyntaxHighlighting
+  autocmd BufNewFile,BufRead *.mako set syntax=mako
+augroup end
 
 " Show line numbers and length
 set number
