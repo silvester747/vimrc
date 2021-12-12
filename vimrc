@@ -195,7 +195,7 @@ set nofoldenable
 
 " GUI font
 if has("gui_running")
-  set guifont=SauceCodePro\ Nerd\ Font\ 10,SauceCodePro\ Nerd\ Font:h11,Sauce_Code_Powerline:h9:cANSI
+  set guifont=SauceCodePro\ Nerd\ Font\ 10,SauceCodePro\ Nerd\ Font:h10,Sauce_Code_Powerline:h9:cANSI
 endif
 
 " Make view not modifiable if file is read-only
