@@ -3,3 +3,4 @@
 autoload/
 bundle/
 .netrwhist
+tmp/

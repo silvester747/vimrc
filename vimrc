@@ -283,3 +283,8 @@ let g:goyo_width = 100
 
 " Fix formatting for AsciiDoc
 autocmd FileType asciidoc set fo=want
+
+" Store backup and swap files in central location
+set directory=$HOME/.vim/tmp/swap//
+set backupdir=$HOME/.vim/tmp/backup//
+set undodir=$HOME/.vim/tmp/undo//
