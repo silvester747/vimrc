@@ -268,3 +268,7 @@ autocmd FileType asciidoc set fo=want
 set directory=$HOME/.vim/tmp/swap//
 set backupdir=$HOME/.vim/tmp/backup//
 set undodir=$HOME/.vim/tmp/undo//
+
+" Split windows more naturally
+set splitbelow
+set splitright
