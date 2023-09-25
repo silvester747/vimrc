@@ -28,6 +28,7 @@ Plugin 'easymotion/vim-easymotion'
 Plugin 'junegunn/goyo.vim'
 Plugin 'junegunn/limelight.vim'
 Plugin 'vim-airline/vim-airline'
+Plugin 'github/copilot.vim'
 
 Plugin 'trevordmiller/nova-vim'
 Plugin 'arcticicestudio/nord-vim'
