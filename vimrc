@@ -25,8 +25,6 @@ Plugin 'Valloric/YouCompleteMe'
 Plugin 'thiagoalessio/rainbow_levels.vim'
 Plugin 'sheerun/vim-polyglot'
 Plugin 'easymotion/vim-easymotion'
-Plugin 'junegunn/goyo.vim'
-Plugin 'junegunn/limelight.vim'
 Plugin 'vim-airline/vim-airline'
 Plugin 'github/copilot.vim'
 
@@ -276,11 +274,6 @@ let g:EasyMotion_smartcase = 1
 " JK motions: Line motions
 map <Leader>j <Plug>(easymotion-j)
 map <Leader>k <Plug>(easymotion-k)
-
-" Goyo and Limelight
-map <Leader>l :Limelight<CR>
-map <Leader>g :Goyo<CR>
-let g:goyo_width = 100
 
 " Fix formatting for AsciiDoc
 autocmd FileType asciidoc set fo=want
